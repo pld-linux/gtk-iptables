@@ -4,8 +4,7 @@ Name:		gtk-iptables
 Version:	0.4.21
 Release:	1
 License:	GPL v2
-Group:		Applications/Networking	
-######		Unknown group!
+Group:		Networking/Admin
 Source0:	http://dl.sourceforge.net/gtk-iptables/%{name}-%{version}.tar.gz
 # Source0-md5:	3328a211b6936802ae5a0bf263a269d7
 URL:		http://gtk-iptables.sourceforge.net/
@@ -25,10 +24,13 @@ iptables, nie bêdzie dzia³a³. Jest napisany w C i rozwijany dla
 GNU/Linux.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
-./configure --prefix=%{_prefix}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure
 %{__make}
 
 %install
@@ -41,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc  NEWS README INSTALL
+%doc NEWS README INSTALL
 %attr(755,root,root) %{_bindir}/*
