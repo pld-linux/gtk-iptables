@@ -8,6 +8,8 @@ Group:		Networking/Admin
 Source0:	http://dl.sourceforge.net/gtk-iptables/%{name}-%{version}.tar.gz
 # Source0-md5:	3328a211b6936802ae5a0bf263a269d7
 URL:		http://gtk-iptables.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.10
 Requires:	iptables
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
