@@ -1,5 +1,5 @@
-Summary:	gtk-iptables is a GTK+-based frontend for iptables
-Summary(pl):	gtk-iptables jest nak³adk± GTK+ na iptables
+Summary:	gtk-iptables - a GTK+-based frontend for iptables
+Summary(pl):	gtk-iptables - nak³adka GTK+ na iptables
 Name:		gtk-iptables
 Version:	0.4.21
 Release:	1
@@ -23,7 +23,7 @@ developed on GNU/Linux.
 gtk-iptables jest opartym na GTK+ interfejsem dla iptables. To jest
 tylko GUI (interfejs graficzny) wiêc je¶li nie masz zainstalowanego
 iptables, nie bêdzie dzia³a³. Jest napisany w C i rozwijany dla
-GNU/Linux.
+systemu GNU/Linux.
 
 %prep
 %setup -q
@@ -37,6 +37,7 @@ GNU/Linux.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
