@@ -1,5 +1,5 @@
 Summary:	gtk-iptables - a GTK+-based frontend for iptables
-Summary(pl.UTF-8):   gtk-iptables - nakładka GTK+ na iptables
+Summary(pl.UTF-8):	gtk-iptables - nakładka GTK+ na iptables
 Name:		gtk-iptables
 Version:	0.4.21
 Release:	1
